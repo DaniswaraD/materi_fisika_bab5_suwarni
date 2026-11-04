@@ -2,22 +2,27 @@
 <html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="theme-color" content="#38b6ff"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
-<title>Fisika BAB5</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-title" content="Fisika BAB5"><meta name="application-name" content="Fisika BAB5">
+<title>Fisika BAB6</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-title" content="Fisika BAB6"><meta name="application-name" content="Fisika BAB6">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#0b2c55;--mut:#41678f;--ac:#1b8cf5;--cy:#00c2ff;--sf:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;--m:"Cambria Math","STIX Two Text",Cambria,"Times New Roman",serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;overflow:hidden;font-family:var(--sf);color:var(--ink);background:linear-gradient(165deg,#9fe3ff,#d4f1ff 35%,#fff);user-select:none;-webkit-user-select:none;touch-action:none;overscroll-behavior:none}
-#bg{position:fixed;inset:0;overflow:hidden;filter:hue-rotate(var(--h,0deg));transition:filter 1.4s;--o:0}
-.au{position:absolute;border-radius:50%;filter:blur(80px);opacity:.65;transition:left 1.6s cubic-bezier(.3,.7,.2,1),top 1.6s cubic-bezier(.3,.7,.2,1);animation:dr 20s ease-in-out infinite alternate}
-.b1{width:46vw;height:46vw;left:calc(-10vw + var(--o)*40vw);top:calc(-14vw + var(--o)*10vw);background:#4fdcff}
-.b2{width:40vw;height:40vw;left:calc(62vw - var(--o)*40vw);top:10vh;background:#6ea8ff;animation-delay:-7s}
-.b3{width:38vw;height:38vw;left:calc(20vw + var(--o)*30vw);top:55vh;background:#fff;opacity:.95;animation-delay:-13s}
-@keyframes dr{to{transform:translate(5vw,4vh) scale(1.15)}}
-.gr{position:absolute;inset:0;background:linear-gradient(#fff6 1px,transparent 1px) 0 0/64px 64px,linear-gradient(90deg,#fff6 1px,transparent 1px) 0 0/64px 64px;-webkit-mask:radial-gradient(ellipse at 30% 30%,#000,transparent 75%);mask:radial-gradient(ellipse at 30% 30%,#000,transparent 75%)}
-.atom{position:absolute;right:-140px;bottom:-160px;width:760px;height:760px;opacity:.8;animation:sp 90s linear infinite}
-@keyframes sp{to{transform:rotate(360deg)}}
-#cv{position:absolute;inset:0;width:100%;height:100%}
+#bg{position:fixed;inset:-24px;overflow:hidden;background:linear-gradient(135deg,#4aadff 0%,#86ccff 34%,#d6efff 64%,#ffffff 100%);filter:hue-rotate(var(--h,0deg));transition:filter 1.4s;--o:0}
+#bg i{position:absolute;display:block}
+.dt{inset:0;background-image:radial-gradient(#ffffffa6 1.6px,transparent 2.2px);background-size:36px 36px;-webkit-mask:linear-gradient(118deg,#000 0%,#0000 58%);mask:linear-gradient(118deg,#000 0%,#0000 58%)}
+.ds{border-radius:50%;background:linear-gradient(145deg,#ffffffe6,#ffffff14 78%);border:1.5px solid #ffffffbf;box-shadow:inset 0 0 50px #ffffff59,0 40px 90px #0a5fd433;transition:transform 1.8s cubic-bezier(.3,.7,.2,1);animation:fl 14s ease-in-out infinite}
+.d1{width:640px;height:640px;left:-170px;top:-250px;transform:translate(calc(var(--o)*160px),calc(var(--o)*60px))}
+.d2{width:360px;height:360px;right:6%;top:9%;transform:translate(calc(var(--o)*-120px),calc(var(--o)*90px));animation-delay:-5s;animation-duration:17s}
+.d3{width:280px;height:280px;left:7%;bottom:-70px;transform:translate(calc(var(--o)*220px),calc(var(--o)*-40px));animation-delay:-9s}
+.sg{width:230px;height:230px;border-radius:44px;right:18%;bottom:12%;rotate:18deg;background:linear-gradient(145deg,#ffffffd9,#ffffff10 80%);border:1.5px solid #ffffffb3;box-shadow:inset 0 0 40px #ffffff4d,0 30px 70px #0a5fd42e;transition:transform 1.8s cubic-bezier(.3,.7,.2,1);transform:translate(calc(var(--o)*-160px),calc(var(--o)*-50px));animation:fl 16s ease-in-out infinite;animation-delay:-3s}
+.rg{width:520px;height:520px;border-radius:50%;right:-120px;bottom:-190px;border:2px solid #ffffffb0;box-shadow:0 0 0 38px #ffffff2e,0 0 0 39px #ffffff80;transition:transform 1.8s cubic-bezier(.3,.7,.2,1);transform:translate(calc(var(--o)*-90px),calc(var(--o)*-40px))}
+@keyframes fl{50%{translate:0 -26px}}
+.bm{top:-25%;width:150px;height:160%;background:linear-gradient(90deg,transparent,#ffffff59,transparent);rotate:24deg;animation:bx 18s ease-in-out infinite alternate}
+.bm2{width:70px;animation-duration:24s;animation-delay:-8s;opacity:.8}
+@keyframes bx{from{translate:-30vw 0}to{translate:110vw 0}}
+.bd0{left:-10%;right:-10%;bottom:-16%;height:44%;background:linear-gradient(180deg,#fff0,#fffffff2 46%);transform:skewY(-5deg)}
+.gn{inset:0;opacity:.14;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
 #bar{position:fixed;left:0;top:0;height:4px;width:0;background:linear-gradient(90deg,#0ea5e9,#00c2ff);box-shadow:0 0 14px #00c2ff;transition:width .7s cubic-bezier(.2,.8,.2,1);z-index:50}
 #sw{position:fixed;top:-10vh;bottom:-10vh;width:36vw;left:-60vw;background:linear-gradient(100deg,transparent,#ffffffb0,transparent);transform:skewX(-14deg);pointer-events:none;z-index:45}
 #sw.on{animation:swp .9s ease-out}
@@ -150,13 +155,93 @@ sub{font-size:.62em;line-height:0}
 .mc .rn{font-size:26px;font-weight:800;color:var(--ac)}
 .mc b{font-size:16px;line-height:1.25}
 .mc small{margin-top:auto;font-size:12px;font-weight:700;color:var(--mut);letter-spacing:1px}
+sup{font-size:.62em;line-height:0;vertical-align:super}
+.ico{width:46px;height:46px;flex:none;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));box-shadow:0 6px 16px #1b8cf540}
+.ico svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cd .ico{margin-bottom:14px}
+.tj{padding:22px 28px;font-size:24px;line-height:1.5;gap:22px}
+.tj .ico{width:62px;height:62px;border-radius:18px}
+.tj .ico svg{width:34px;height:34px}
+.tj b{font:800 54px var(--sf);color:#1b8cf526;margin-left:auto;padding-left:12px}
+.sf{display:flex;gap:14px;align-items:flex-start;padding:11px 18px;font-size:17px;line-height:1.5;margin-bottom:9px}
+.sf .n{width:34px;height:34px;font-size:16px;margin-top:1px}
+.emw{width:100%;display:block}
+.emw text{font:italic 700 24px var(--m)}
+.emw .ar2{font:700 14px var(--sf);font-style:normal;fill:var(--mut)}
+.emw .pa{stroke:#0b2c55;stroke-width:1.6;fill:none}
+.emw .st{stroke:#1b8cf555;stroke-width:1.4;fill:none}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.bd{padding:18px 20px;display:flex;flex-direction:column;gap:9px}
+.bd h4{font-size:18px;font-weight:800;line-height:1.2}
+.bd p{font-size:16px;line-height:1.5}
+.axr{display:flex;align-items:center;gap:16px;font-size:14px;font-weight:700;color:var(--mut);line-height:1.4;margin-bottom:12px}
+.axr i{flex:1;height:4px;border-radius:4px;background:linear-gradient(90deg,#60a5fa,#1b8cf5,#0b2c55);position:relative}
+.axr i::after{content:"";position:absolute;right:-2px;top:-5px;border-left:12px solid #0b2c55;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.sp7{display:grid;grid-template-columns:repeat(7,1fr);gap:9px}
+.bn{padding:14px 12px;display:flex;flex-direction:column;gap:7px;align-items:flex-start;border-top:6px solid var(--a)}
+.bn b{font-size:16px;line-height:1.2}
+.bn small{font-size:13.5px;line-height:1.4;color:var(--mut);font-weight:600}
+.vis{margin-top:14px;padding:14px 22px}
+.vl{display:flex;gap:12px;align-items:baseline;font-size:15px;margin-bottom:8px;color:var(--mut)}
+.vl b{color:var(--ink);font-size:17px}
+.vb{height:26px;border-radius:14px;background:linear-gradient(90deg,#7c3aed,#4f46e5,#0ea5e9,#22c55e,#facc15,#f97316,#ef4444);box-shadow:inset 0 0 0 1px #ffffff80,0 6px 16px #1b8cf526}
+.vt{display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:var(--mut);margin-top:6px}
+.lst2{list-style:none}
+.lst2 li{position:relative;padding-left:22px;margin:9px 0;font-size:18px;line-height:1.5}
+.lst2 li::before{content:"";position:absolute;left:0;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--ac)}
+.tip{display:flex;gap:16px;align-items:center;padding:14px 22px;font-size:17.5px;line-height:1.5;margin-top:16px}
+.tip .ico{width:44px;height:44px}
+.stp4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.stp{padding:20px}
+.stp:not(:last-child)::after{content:"";position:absolute;right:-20px;top:50%;width:12px;height:12px;border-top:3.5px solid var(--ac);border-right:3.5px solid var(--ac);transform:rotate(45deg)}
+.stp h4{font-size:19px;line-height:1.25;margin:12px 0 7px}
+.stp p{font-size:16px;line-height:1.5}
+.pf{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pf div{display:flex;align-items:center;gap:10px;background:#ffffffb8;border-radius:14px;padding:9px 12px;font-size:17px;font-weight:600}
+.pf b{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#1b8cf5,#00c2ff);color:#fff;font-size:16px}
+.pf i{margin-left:auto;font:italic 600 19px var(--m)}
+.pt{font-size:16px;line-height:1.5;margin-top:12px;font-weight:600;color:var(--mut)}
+.stl{display:flex;gap:14px;align-items:center;font-size:18px;line-height:1.4;padding:9px 0}
+.stl .n{width:36px;height:36px;font-size:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.exh{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.exh h1{font-size:32px}
+.exh .n{width:48px;height:48px;font-size:22px}
+.lb{font:800 13px var(--sf);font-style:normal;letter-spacing:1.5px;color:var(--ac);display:block}
+.chp{font-family:var(--m);font-size:23px;line-height:1.35;margin-top:6px;padding:0}
+.st2{display:flex;gap:14px;align-items:flex-start;padding:11px 18px}
+.st2 .n{width:34px;height:34px;font-size:16px;margin-top:2px}
+.st2 p{font-size:16px;line-height:1.45}
+.st2 .eq{font-size:22px;margin-top:4px}
+.st2 .eq div,.st2 .eq{margin-bottom:0}
+.jd2{padding:12px 20px;font-size:19px;line-height:1.45;background:linear-gradient(135deg,#d1fae5e6,#ecfdf5a6);border-color:#6ee7b7}
+.jd2 b{color:#047857}
+.lt .rv{margin-top:12px;border:0;cursor:pointer;font:700 15px var(--sf);padding:11px 20px;border-radius:30px;color:#fff;background:linear-gradient(135deg,#1b8cf5,#00c2ff);box-shadow:0 8px 20px #1b8cf559;transition:.3s}
+.lt .rv:hover{transform:translateY(-2px)}
+.lt .ans{margin-top:14px;padding:12px 16px;border-radius:14px;background:#ffffffc7;font-size:20px;line-height:1.45;opacity:0;transform:translateY(8px);transition:.4s}
+.lt.open .ans{opacity:1;transform:none}
+#simSl{-webkit-appearance:none;appearance:none;width:100%;height:12px;border-radius:12px;background:linear-gradient(90deg,#2563eb,#0ea5e9,#dc2626,#8b5cf6,#6d28d9,#0f4c81,#0b2c55);outline:none;margin:12px 0 6px;cursor:pointer}
+#simSl::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:5px solid var(--tc,#1b8cf5);box-shadow:0 4px 12px #0b2c5540}
+#simSl::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid var(--tc,#1b8cf5);box-shadow:0 4px 12px #0b2c5540}
+.sct{display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:var(--mut)}
+.sbr{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.sbr span{font-size:13px;font-weight:700;padding:6px 12px;border-radius:20px;background:#ffffffb8;color:var(--mut);transition:.3s}
+.sbr span.on{background:var(--a);color:#fff;box-shadow:0 4px 12px #0b2c5533}
+.pre{display:flex;gap:8px;margin-top:14px}
+.pre button{flex:1;border:0;cursor:pointer;font:700 14px var(--sf);padding:11px 8px;border-radius:14px;background:#ffffffd9;color:var(--ac);box-shadow:0 4px 12px #1b8cf51f;transition:.25s}
+.pre button:hover{background:#fff;transform:translateY(-2px)}
+.sbadge{font:800 24px var(--sf);padding:9px 20px;border-radius:14px;color:#fff;background:#2563eb;transition:.3s}
+#menu{padding:76px 50px 16px}
+.mh{margin-bottom:16px}
+.mh h2{font-size:36px}
+#mg{gap:12px}
+.mc{height:auto;min-height:96px;padding:12px 16px;gap:3px}
+.mc .rn{font-size:19px}
+.mc b{font-size:15px}
+.mc small{display:none}
 @media(prefers-reduced-motion:reduce){.s.on,.s.out,.s.on .a{animation-duration:.01s}}
 </style></head><body>
-<div id="bg">
-<div class="gr"></div><div class="au b1"></div><div class="au b2"></div><div class="au b3"></div>
-<svg class="atom" viewBox="-100 -100 200 200" fill="none" stroke="#fff" stroke-width=".7"><g id="ao"><ellipse rx="92" ry="34"/><circle r="2.4" fill="#fff"><animateMotion dur="7s" repeatCount="indefinite" path="M-92 0a92 34 0 1 0 184 0a92 34 0 1 0-184 0"/></circle></g><use href="#ao" transform="rotate(60)"/><use href="#ao" transform="rotate(120)"/><circle r="9" fill="#fff" fill-opacity=".8" stroke="none"/></svg>
-<canvas id="cv"></canvas>
-</div>
+<div id="bg"><i class="bd0"></i><i class="dt"></i><i class="bm" style="left:8%"></i><i class="bm bm2" style="left:30%"></i><i class="ds d1"></i><i class="ds d2"></i><i class="ds d3"></i><i class="sg"></i><i class="rg"></i><i class="gn"></i></div>
 <svg width="0" height="0" style="position:absolute"><defs>
 <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1L10 5L0 9z" fill="#0b2c55"/></marker>
 <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L10 5L0 9z" fill="#1b8cf5"/></marker>
@@ -168,7 +253,7 @@ sub{font-size:.62em;line-height:0}
 <div class="pill gl"><button class="ib" id="mn" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0b2c55" stroke-width="2.5" stroke-linecap="round"><rect x="4" y="4" width="6" height="6" rx="2"/><rect x="14" y="4" width="6" height="6" rx="2"/><rect x="4" y="14" width="6" height="6" rx="2"/><rect x="14" y="14" width="6" height="6" rx="2"/></svg></button><span id="cl">Pendahuluan</span></div>
 <div class="pill gl"><button class="ib" id="pv" aria-label="Sebelumnya"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b2c55" stroke-width="3" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><span id="ct"></span><button class="ib" id="nx" aria-label="Berikutnya"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b2c55" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button><button class="ib" id="fs" aria-label="Layar penuh"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b2c55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button></div>
 </div>
-<button class="cta" id="inst" aria-label="Unduh aplikasi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>Unduh Aplikasi</button><div id="note"></div><div id="chips"><button class="chip" data-g="2">Kembali ke daftar isi</button><button class="chip" data-g="3">Kembali ke awal bab</button></div>
+<button class="cta" id="inst" aria-label="Unduh aplikasi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>Unduh Aplikasi</button><div id="note"></div><div id="chips"><button class="chip" data-g="3">Kembali ke awal bab</button></div>
 <div id="dots"></div>
 <div id="hint">Ketuk panah, geser layar, atau tekan ← → untuk berpindah slide</div>
 <div id="menu"><div class="mh"><h2>Pilih Slide</h2><button class="ib" id="mx" aria-label="Tutup"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0b2c55" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div id="mg"></div></div>
@@ -176,41 +261,68 @@ sub{font-size:.62em;line-height:0}
 <div id="rot">Putar perangkat ke mode landscape agar slide tampil penuh</div>
 <script>
 const NAMA="Suwarni S.Pd.";
-const T=["Sampul","Disklaimer","Daftar Isi","Bab V · Mempelajari","Arus dan Tegangan Efektif","Arus dan Tegangan Rata-Rata","Impedansi","Rangkaian Murni dan Kombinasi","Rangkaian Resonansi","Daya pada Rangkaian Bolak-Balik","Penerapan Rangkaian Listrik Bolak-Balik","Contoh Soal","Penyelesaian Contoh Soal"];
+const T=["Sampul","Disklaimer","Tujuan Pembelajaran","Radiasi Gelombang Elektromagnetik","Apa Itu Gelombang Elektromagnetik?","Terbentuknya Gelombang Elektromagnetik","Sifat Gelombang Elektromagnetik","Rumus Penting","Awalan Satuan dan Langkah Menghitung","Spektrum Gelombang Elektromagnetik","Manfaat Gelombang Elektromagnetik","Bahaya Radiasi","Coba Sendiri: Geser Frekuensi","Ringkasan Materi","Contoh Soal 1: Panjang Gelombang","Contoh Soal 2: Waktu Rambat","Contoh Soal 3: Frekuensi Cahaya","Contoh Soal 4: Energi Foton","Latihan Soal"];
 const N=T.length;
 const v=(s,b)=>`<i class="v">${s}${b?`<sub>${b}</sub>`:""}</i>`;
 const fr=(n,d)=>`<span class="fr"><span>${n}</span><span>${d}</span></span>`;
 const sq=x=>`<span class="sq"><svg viewBox="0 0 10 20" preserveAspectRatio="none"><path d="M0 12L2 11L5 19L10 0"/></svg><span>${x}</span></span>`;
-const sb=(m,s)=>`${m}<tspan dy="6" font-size="15">${s}</tspan><tspan dy="-6">&#8203;</tspan>`;
-const wv=(cur,ln)=>{const W=520,H=190,A=62,m=H/2;const p=f=>{let d="";for(let x=0;x<=W;x+=5)d+=(x?"L":"M")+x+" "+(m-A*Math.sin(x/W*Math.PI*4+f)).toFixed(1);return d};
-return `<svg viewBox="0 0 ${W} ${H}" class="wvs"><line class="ax" x1="0" y1="${m}" x2="${W}" y2="${m}"/>${ln.map(([k,t])=>`<line class="dl2" x1="0" x2="${W}" y1="${m-A*k}" y2="${m-A*k}"/><text x="${W-6}" y="${m-A*k+(k<1?24:-9)}" text-anchor="end">${t}</text>`).join("")}${cur.map(([f,c])=>`<path class="dr" pathLength="1" stroke="${c}" d="${p(f)}"/>`).join("")}</svg>`};
-const ph=(L,C,R,Z,D)=>`<svg viewBox="0 0 540 270" class="phs">
-<path class="pa pv" style="--j:0" d="M24 140H512" marker-end="url(#ar)"/><path class="pa pv" style="--j:0" d="M120 256V22" marker-end="url(#ar)" marker-start="url(#ar)"/>
-<text x="500" y="124">ωt</text><text x="132" y="30">${L}</text><text x="132" y="252">${C}</text>
-<path class="pb pv" style="--j:1" d="M120 140H378" marker-end="url(#ab)"/><text x="365" y="164">${R}</text>
-<path class="pd pv" style="--j:2" d="M120 70H378"/><path class="pb pv" style="--j:2" d="M378 140V74" marker-end="url(#ab)"/><text x="108" y="64" text-anchor="end">${D}</text>
-<path class="pb pv" style="--j:3" d="M120 140L376 72" marker-end="url(#ab)"/><text x="392" y="66">${Z}</text>
-<path class="pa pv" style="--j:3" d="M170 140A50 50 0 0 0 168 127"/><text x="180" y="136" font-size="18">φ</text><text x="222" y="164">I</text></svg>`;
-const FM=[[`${v("V","ef")} = ${fr(v("V","m"),sq("2"))}`,"TEGANGAN EFEKTIF",0,10,14],[`${v("Z")} = ${sq(`${v("R")}<sup>2</sup> + (${v("X","L")} − ${v("X","C")})<sup>2</sup>`)}`,"IMPEDANSI",205,128,-18],[`${v("f","r")} = ${fr("1",`2π${sq(v("LC"))}`)}`,"RESONANSI",30,215,22],[`${v("P")} = ${v("I","ef")}${v("V","ef")} cos θ`,"DAYA AC",235,320,-12]];
-const toc=["Rangkaian Searah","Listrik Statis","Medan Magnetik","Induksi Faraday","Listrik Bolak-Balik","Radiasi Gelombang Elektromagnetik","Relativitas","Konsep dan Fenomena Kuantum","Teknologi Digital","Inti Atom dan IPTEK Nuklir","Keterbatasan Energi dan Dampaknya bagi Kehidupan"];
-const rom=["I","II","III","IV","V","VI","VII","VIII","IX","X","XI"];
+const tre=[-90,30,150].map(c=>{const p=(r,a)=>[(12+r*Math.cos(a*Math.PI/180)).toFixed(2),(12+r*Math.sin(a*Math.PI/180)).toFixed(2)];const a=p(3.6,c-30),b=p(9.5,c-30),d=p(9.5,c+30),e=p(3.6,c+30);return`M${a}L${b}A9.5 9.5 0 0 1 ${d}L${e}A3.6 3.6 0 0 0 ${a}z`}).join("");
+const I={radio:'<path d="M12 12v9M8 21h8"/><circle cx="12" cy="10" r="1.8"/><path d="M8.4 6.4a5 5 0 0 0 0 7.2M15.6 6.4a5 5 0 0 1 0 7.2M5.6 3.6a9 9 0 0 0 0 12.8M18.4 3.6a9 9 0 0 1 0 12.8"/>',
+mikro:'<rect x="3" y="5" width="18" height="14" rx="2.5"/><rect x="6" y="8" width="9" height="8" rx="1.2"/><path d="M18.2 9v.01M18.2 12v.01M18.2 15v.01"/>',
+ir:'<path d="M10 14.5V5a2 2 0 0 1 4 0v9.5a4 4 0 1 1-4 0z"/><path d="M12 9v7"/>',
+tampak:'<path d="M2 12s3.7-7 10-7 10 7 10 7-3.7 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+uv:'<circle cx="12" cy="12" r="4"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
+x:'<rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/>',
+gamma:`<g fill="currentColor" stroke="none"><path d="${tre}"/><circle cx="12" cy="12" r="1.8"/></g>`,
+shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+bolt:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+calc:'<rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/>'};
+const ic=(k,a="#1b8cf5",b="#00c2ff")=>`<span class="ico" style="--a:${a};--b:${b}"><svg viewBox="0 0 24 24">${I[k]}</svg></span>`;
+const BD=[["radio","Gelombang Radio","#2563eb","#60a5fa","> 30 cm","< 10<sup>9</sup> Hz","Siaran radio dan televisi, telepon seluler, serta navigasi.","Pada intensitas sangat tinggi dapat menimbulkan pemanasan jaringan."],
+["mikro","Gelombang Mikro","#0284c7","#38bdf8","1 mm – 30 cm","10<sup>9</sup> – 3×10<sup>11</sup> Hz","Radar, oven microwave, dan komunikasi satelit.","Pemanasan jaringan tubuh dan gangguan pada mata bila paparan kuat."],
+["ir","Inframerah","#dc2626","#fb923c","700 nm – 1 mm","3×10<sup>11</sup> – 4,3×10<sup>14</sup> Hz","Remote kontrol, kamera malam, pemanas, dan terapi otot.","Panas berlebih dapat membakar kulit dan merusak mata."],
+["tampak","Cahaya Tampak","#8b5cf6","#f59e0b","400 – 700 nm","4,3×10<sup>14</sup> – 7,5×10<sup>14</sup> Hz","Penglihatan, fotosintesis, fotografi, dan serat optik.","Cahaya sangat terang atau laser dapat merusak retina."],
+["uv","Ultraviolet","#6d28d9","#a78bfa","10 – 400 nm","7,5×10<sup>14</sup> – 3×10<sup>16</sup> Hz","Sterilisasi alat, pembentukan vitamin D, dan deteksi uang palsu.","Kulit terbakar, penuaan dini, katarak, dan kanker kulit."],
+["x","Sinar-X","#0f4c81","#1b8cf5","0,01 – 10 nm","3×10<sup>16</sup> – 3×10<sup>19</sup> Hz","Foto rontgen tulang, pemeriksaan bagasi, dan analisis struktur kristal.","Merusak sel dan jaringan; paparan berulang memicu kanker."],
+["gamma","Sinar Gamma","#0b2c55","#2563eb","< 0,01 nm","> 3×10<sup>19</sup> Hz","Terapi kanker, sterilisasi alat medis, dan pengawetan makanan.","Merusak DNA, memicu mutasi dan kanker; daya tembus sangat besar."]];
+const emw=()=>{const W=520,y0=168;let e="",b="",st="";for(let x=30;x<=500;x+=3){const s=Math.sin((x-30)/150*2*Math.PI);e+=(x==30?"M":"L")+x+" "+(y0-70*s).toFixed(1);b+=(x==30?"M":"L")+(x-52*s).toFixed(1)+" "+(y0+22*s).toFixed(1)}
+for(let x=45;x<=495;x+=15){const s=Math.sin((x-30)/150*2*Math.PI);st+=`<path class="st" d="M${x} ${y0}V${(y0-70*s).toFixed(1)}"/><path class="st" d="M${x} ${y0}L${(x-52*s).toFixed(1)} ${(y0+22*s).toFixed(1)}"/>`}
+return `<svg viewBox="0 0 ${W} 300" class="emw"><path class="pa" d="M16 ${y0}H510" marker-end="url(#ar)"/>${st}<path class="dr" pathLength="1" stroke="#1b8cf5" d="${e}"/><path class="dr" pathLength="1" stroke="#00b8e6" d="${b}"/><text x="58" y="72" fill="#1b8cf5">E</text><text x="6" y="208" fill="#00a6d6">B</text><text x="508" y="34" text-anchor="end" class="ar2">arah rambat</text></svg>`};
 const dis=["Slide pembelajaran ini dibuat sebagai alternatif guna membantu Bapak/Ibu Guru melaksanakan pembelajaran.","Materi slide ini mengacu pada Kompetensi Inti (KI) dan Kompetensi Dasar (KD) Kurikulum 2013.","Dengan berbagai alasan, materi dalam slide ini disajikan secara ringkas, hanya memuat poin-poin besar saja.","Dalam penggunaannya nanti, Bapak/Ibu Guru dapat mengembangkannya sesuai kebutuhan.","Harapan kami, dengan slide ini Bapak/Ibu Guru dapat mengembangkan pembelajaran secara kreatif dan interaktif."];
+const FM=[[`${v("c")} = λ${v("f")}`,"CEPAT RAMBAT",0,10,14],[`${v("c")} = ${fr("1",sq(`${v("μ","0")}${v("ε","0")}`))}`,"RUANG HAMPA",215,125,-18],[`${v("E")} = ${v("h")}${v("f")}`,"ENERGI FOTON",30,235,22],[`${v("c")} = ${fr(v("E"),v("B"))}`,"MEDAN E DAN B",245,335,-12]];
 const lk=(g,t)=>`<div class="lk" data-g="${g}">${t}</div>`;
-const S=[
-`<div class="cov"><div class="gl cp a"><span class="tag">SMA/MA KELAS XII</span><div class="ft">${[..."FISIKA"].map((l,k)=>`<span style="--k:${k}">${l}</span>`).join("")}</div><h2>Peminatan Matematika dan Ilmu-Ilmu Alam</h2><div class="row"><div class="gl by"><i>S</i><span>Oleh<b>${NAMA}</b></span></div><button class="cta" data-g="1">Mulai<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div></div><div class="fls">${FM.map((f,k)=>`<div class="fl a" style="left:${f[2]}px;top:${f[3]}px;--k:${f[4]}"><div class="gl" style="animation-delay:${-k*1.1}s">${f[0]}<small>${f[1]}</small></div></div>`).join("")}</div></div>`,
+const sf=["Perubahan medan magnet dan medan listrik terjadi pada saat yang sama sehingga kedua medan memiliki harga maksimum dan minimum pada saat yang sama dan pada tempat yang sama.","Penjalaran medan magnetik tegak lurus dengan arah rambat gelombang sehingga merupakan gelombang transversal.","Mengalami peristiwa pemantulan, pembiasaan, interferensi, difraksi, dan polarisasi.","Tidak dipengaruhi oleh medan listrik dan magnet karena tidak memiliki muatan.","Dalam ruang hampa merambat dengan kelajuan 3 × 10<sup>8</sup> m/s. Kecepatannya akan berubah jika merambat pada medium yang memiliki kerapatan berbeda."];
+const cards=i=>BD.map(b=>`<div class="gl bd a">${ic(b[0],b[2],b[3])}<h4>${b[1]}</h4><p>${b[i]}</p></div>`).join("");
+const S0=[
+`<div class="cov"><div class="gl cp a"><span class="tag">SMA/MA KELAS XII</span><div class="ft">${[..."FISIKA"].map((l,k)=>`<span style="--k:${k}">${l}</span>`).join("")}</div><h2 style="color:var(--ink);font-size:27px">Radiasi Gelombang Elektromagnetik</h2><p style="font-size:17px;color:var(--mut);font-weight:600">Peminatan Matematika dan Ilmu-Ilmu Alam</p><div class="row"><div class="gl by"><i>S</i><span>Oleh<b>${NAMA}</b></span></div><button class="cta" data-g="1">Mulai<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div></div><div class="fls">${FM.map((f,k)=>`<div class="fl a" style="left:${f[2]}px;top:${f[3]}px;--k:${f[4]}"><div class="gl" style="animation-delay:${-k*1.1}s">${f[0]}<small>${f[1]}</small></div></div>`).join("")}</div></div>`,
 `<h1 class="ti2 a">Disklaimer</h1>${dis.map((x,i)=>`<div class="gl dli a"><span class="n">${i+1}</span>${x}</div>`).join("")}`,
-`<h1 class="ti2 a">Daftar Isi</h1><div class="toc">${toc.map((t,i)=>`<div class="gl ti a ${i==4?"hot":"off"}"${i==4?' data-g="3"':""}><span class="n">${rom[i]}</span>Bab ${rom[i]} · ${t}</div>`).join("")}</div>`,
-`<h1 class="ti2 a">Bab V · Listrik Bolak-Balik</h1><h2 class="a" style="margin:-8px 0 22px 26px">Mempelajari :</h2><div class="three"><div class="gl cd a"><h3>Besaran dalam Listrik Bolak-Balik</h3>${lk(4,"Tegangan dan Arus")}${lk(6,"Impedansi")}</div><div class="gl cd a"><h3>Rangkaian Listrik Bolak-Balik</h3>${lk(7,"Rangkaian Murni dan Kombinasi")}${lk(8,"Rangkaian Resonansi")}${lk(9,"Daya pada Rangkaian Bolak-Balik")}</div><div class="gl cd a"><h3>Penerapan Rangkaian Listrik Bolak-Balik</h3>${lk(10,"Tuning")}${lk(10,"Filter")}</div></div>`,
-`<div class="two"><div class="col"><span class="tag a">BESARAN AC</span><h1 class="a">Arus dan Tegangan Efektif</h1><p class="a">Nilai efektif arus dan tegangan bolak-balik adalah nilai arus dan tegangan bolak-balik yang dianggap setara dengan arus dan tegangan searah yang menghasilkan sejumlah kalor yang sama ketika melalui suatu penghantar dalam waktu yang sama.</p><p class="a">Apabila tegangan dan kuat arus diukur dengan alat ukur arus bolak-balik, seperti voltmeter AC, atau multimeter, nilai yang ditunjukkan oleh alat tersebut merupakan nilai efektifnya. Berdasarkan perhitungan, didapatkan hubungan antara nilai efektif dan nilai maksimum sebagai berikut.</p></div><div class="col"><div class="gl wc a">${wv([[0,"#1b8cf5"]],[[1,sb("V","m")],[.707,sb("V","ef")]])}</div><div class="fr2"><div class="gl fx a"><div>${v("V","ef")} = ${fr(v("V","m"),sq("2"))}</div><small>${v("V","ef")} = tegangan efektif (V)<br>${v("V","m")} = tegangan maksimum (V)</small></div><div class="gl fx a"><div>${v("I","ef")} = ${fr(v("I","m"),sq("2"))}</div><small>${v("I","ef")} = arus efektif (A)<br>${v("I","m")} = arus maksimum (A)</small></div></div></div></div>`,
-`<div class="two"><div class="col"><span class="tag a">BESARAN AC</span><h1 class="a">Arus dan Tegangan Rata-Rata</h1><p class="a">Harga rata-rata arus bolak-balik adalah harga yang dianggap setara dengan harga arus searah yang tetap memindahkan sejumlah muatan yang sama dalam waktu yang sama.</p></div><div class="col"><div class="gl wc a">${wv([[0,"#1b8cf5"]],[[1,sb("V","m")],[.637,sb("V","r")]])}</div><div class="fr2"><div class="gl fx a"><div style="font-size:27px">${v("I","r")} = ${fr(`2${v("I","m")}`,"π")} = 0,637${v("I","m")}</div><small>${v("I","r")} = arus rata-rata (A)</small></div><div class="gl fx a"><div style="font-size:27px">${v("V","r")} = ${fr(`2${v("V","m")}`,"π")} = 0,637${v("V","m")}</div><small>${v("V","r")} = tegangan rata-rata (V)</small></div></div></div></div>`,
-`<div class="two"><div class="col"><span class="tag a">BESARAN AC</span><h1 class="a">Impedansi (${v("Z")})</h1><p class="a">Impedansi dapat didefinisikan sebagai besaran yang merupakan nisbah atau perbandingan antara tegangan dengan arus. Impedansi terkait dengan sifat menghambat arus. Lawan dari besaran ini adalah admitansi yaitu sifat menghantarkan arus. Admitansi merupakan perbandingan arus listrik efektif terhadap tegangan efektifnya (yang berbentuk sinusoidal).</p><p class="a">Secara matematis, nilai impedansi dirumuskan sebagai berikut.</p></div><div class="col"><div class="gl wc a">${wv([[0,"#1b8cf5"],[-.9,"#00b8e6"]],[])}<div class="lgs"><span style="--c:#1b8cf5">Tegangan (${v("V")})</span><span style="--c:#00b8e6">Arus (${v("I")})</span></div></div><div class="gl fx a" style="font-size:44px"><div>${v("Z")} = ${fr(v("V"),v("I"))}</div></div></div></div>`,
-`<span class="tag a">RANGKAIAN AC</span><h1 class="a" style="margin:10px 0 4px">Rangkaian Murni dan Kombinasi</h1><h2 class="a" style="margin-bottom:14px">Diagram Fasor rangkaian R-L-C</h2><div class="gl ph2 a"><div>${ph(sb("V","L"),sb("V","C"),sb("V","R"),"V",`${sb("V","L")} − ${sb("V","C")}`)}</div><div>${ph(sb("X","L"),sb("X","C"),"R","Z",`${sb("X","L")} − ${sb("X","C")}`)}</div></div><div class="row3"><div class="gl fx a"><em>REAKTANSI INDUKTIF</em><div>${v("X","L")} = ω${v("L")}</div></div><div class="gl fx a"><em>REAKTANSI KAPASITIF</em><div>${v("X","C")} = ${fr("1",`ω${v("C")}`)}</div></div><div class="gl fx a"><em>IMPEDANSI TOTAL</em><div style="font-size:28px">${v("Z")} = ${sq(`${v("R")}<sup>2</sup> + (${v("X","L")} − ${v("X","C")})<sup>2</sup>`)}</div></div></div>`,
-`<div class="two"><div class="col"><span class="tag a">RANGKAIAN AC</span><h1 class="a">Rangkaian Resonansi</h1><p class="a">Pada dasarnya rangkaian resonansi adalah rangkaian seri ${v("R")}–${v("L")}–${v("C")} yang mengikuti suatu keadaan tertentu. Rangkaian resonansi terjadi jika impedansi rangkaian bernilai real, artinya komponen imajiner bernilai nol. Keadaan ini menyatakan bahwa nilai ${v("Z")} = ${v("R")}. Besar reaktansi induktif dan kapasitif sama (${v("X","L")} = ${v("X","C")}). Tinjau impedansi total pada rangkaian seri ${v("R")}–${v("L")}–${v("C")}, impedansi total rangkaian resonansi sebesar:</p></div><div class="col" style="gap:18px"><div class="gl fx a"><em>IMPEDANSI TOTAL</em><div style="font-size:38px">|${v("Z")}| = ${sq(`${v("R")}<sup>2</sup>`)} = ${v("R")}</div></div><p class="a" style="padding-left:6px">Besarnya frekuensi resonansi rangkaian adalah:</p><div class="gl fx a"><em>FREKUENSI RESONANSI</em><div style="font-size:42px">${v("f","r")} = ${fr("1","2π")} ${sq(fr("1",v("LC")))}</div></div></div></div>`,
-`<div class="two"><div class="col"><span class="tag a">DAYA AC</span><h1 class="a">Daya pada Rangkaian Bolak-Balik</h1><div class="gl fx a" style="font-size:44px;margin-top:10px"><div>${v("P")} = ${v("I","ef")}${v("V","ef")} cos θ</div></div></div><div class="gl cd a" style="padding:26px 32px"><h3>Keterangan</h3><ul class="lst" style="font-family:var(--m);font-size:26px;line-height:2"><li><b style="width:80px">${v("P")}</b><span>= daya (W)</span></li><li><b style="width:80px">${v("V","ef")}</b><span>= tegangan efektif (V)</span></li><li><b style="width:80px">${v("I","ef")}</b><span>= arus efektif (A)</span></li><li><b style="width:80px">cos θ</b><span>= faktor daya (${fr(v("R"),v("Z"))})</span></li></ul></div></div>`,
-`<h1 class="ti2 a" style="font-size:34px">Penerapan Rangkaian Listrik Bolak-Balik</h1><div class="two2"><div class="gl cd a"><h3><i>a</i>Tuning</h3><p>Tuning telah banyak dibahas pada subpokok bahasan sebelumnya. Kapasitor atau kondensator variabel menjadi komponen penting dalam rangkaian ini. Antena menerima sinyal dari stasiun transmitter dengan frekuensi bersesuaian dengan frekuensi yang dikeluarkan stasiun tersebut. Supaya stasiun receiver mampu menerjemahkan informasi dalam sinyal yang ditangkap, kondensator variabel harus diputar sehingga terjadi resonansi.</p></div><div class="gl cd a"><h3><i>b</i>Filter</h3><p>Filter adalah rangkaian penyaring frekuensi. Filter mampu meloloskan frekuensi tertentu dan memblokir frekuensi lain. Filter ada dua macam yaitu filter aktif dan pasif. Hal yang membedakan keduanya adalah filter pasif mampu melakukan filter terhadap sinyal masukan sekaligus melakukan atenuasi atau penguatan terhadap sinyal output. Filter aktif memanfaatkan komponen aktif seperti transistor dan penguat operasional (Op-Amp). Sementara filter pasif hanya melakukan penyaringan tanpa memperkuat sinyal output. Filter pasif cenderung memperlemah sinyal masukan karena adanya energi yang terdisipasi saat proses filtering atau penyaringan berlangsung.</p></div></div>`,
-`<div class="two"><div class="col"><span class="tag a">CONTOH SOAL</span><h1 class="a">Rangkaian Seri ${v("R")}–${v("L")}–${v("C")}</h1><p class="a">Rangkaian seri ${v("R")}–${v("L")}–${v("C")} tersusun atas ${v("R")} = 25 Ω, ${v("L")} = 10 H, dan ${v("C")} = 2,5 F. Rangkaian tersebut dihubungkan dengan sumber tegangan AC sehingga terjadi resonansi. Hitunglah:</p><ul class="lst a"><li><b>a.</b>frekuensi resonansi rangkaian;</li><li><b>b.</b>frekuensi sudut resonansi;</li><li><b>c.</b>impedansi total pada rangkaian.</li></ul></div><div class="col" style="gap:18px"><div class="gl fx a" style="align-items:flex-start;padding:22px 30px"><em>DIKETAHUI</em><div class="chp">${v("R")} = 25 Ω<br>${v("L")} = 10 H<br>${v("C")} = 2,5 F</div></div><div class="gl fx a" style="align-items:flex-start;padding:22px 30px"><em>DITANYAKAN</em><div class="chp">a. ${v("f","r")}<br>b. ${v("ω","r")}<br>c. ${v("Z")}</div></div></div></div>`,
-`<div class="two" style="grid-template-columns:1.15fr 1fr;align-items:stretch"><div class="gl cd a" style="padding:18px 28px"><h3>a. Frekuensi resonansi rangkaian</h3><div class="eq"><div>${v("f","r")} = ${fr("1","2π")} ${sq(fr("1",v("LC")))}</div><div class="q">= ${fr("1","2π")} ${sq(fr("1","(10 H)(2,5 F)"))}</div><div class="q">= ${fr("1","2π")} ${sq(fr("1","25"))} Hz</div><div class="q">= ${fr("1","2π")} ${sq("0,04")} Hz</div><div class="q">= ${fr("1","2π")} (0,2) Hz</div><div class="q">= ${fr("0,1","π")} Hz</div></div><p class="jd">Jadi, frekuensi resonansi rangkaian adalah ${fr("0,1","π")} Hz.</p></div><div class="col" style="gap:16px"><div class="gl cd a" style="padding:18px 28px"><h3>b. Frekuensi sudut resonansi</h3><div class="eq"><div>${v("ω","r")} = 2π${v("f","r")} = 2π(${fr("0,1","π")}) = 0,2 rad/s</div></div><p class="jd">Jadi, frekuensi sudut resonansi adalah 0,2 rad/s.</p></div><div class="gl cd a" style="padding:18px 28px"><h3>c. Impedansi total pada rangkaian</h3><div class="eq"><div>|${v("Z")}| = ${v("R")} = 25 Ω</div></div><p class="jd">Jadi, impedansi total pada rangkaian adalah 25 Ω.</p></div><a class="gl vid a" href="http://bit.ly/2UPrBt6" target="_blank" rel="noopener">Video Tutorial · bit.ly/2UPrBt6</a></div></div>`
+`<h1 class="ti2 a">Tujuan Pembelajaran</h1>${["Peserta didik mampu menjelaskan sifat-sifat gelombang elektromagnetik dengan benar setelah melakukan kegiatan praktikum dan diskusi.","Peserta didik mampu menjelaskan manfaat dan bahaya radiasi gelombang elektromagnetik dengan benar setelah melakukan kegiatan praktikum dan diskusi."].map((x,i)=>`<div class="gl dli tj a">${ic(i?"shield":"bolt")}<span>${x}</span><b>${i+1}</b></div>`).join("")}`,
+`<h1 class="ti2 a">Radiasi Gelombang Elektromagnetik</h1><h2 class="a" style="margin:-8px 0 22px 26px">Mempelajari :</h2><div class="three"><div class="gl cd a">${ic("bolt")}<h3>Sifat Gelombang Elektromagnetik</h3>${lk(4,"Sifat-sifat gelombang")}${lk(5,"Rumus penting")}</div><div class="gl cd a">${ic("tampak","#8b5cf6","#f59e0b")}<h3>Spektrum, Manfaat, dan Bahayanya</h3>${lk(6,"Spektrum gelombang")}${lk(7,"Manfaat")}${lk(8,"Bahaya radiasi")}</div><div class="gl cd a">${ic("calc","#0284c7","#38bdf8")}<h3>Latihan</h3>${lk(9,"Contoh soal")}</div></div>`,
+`<h1 class="ti2 a">Sifat Gelombang Elektromagnetik</h1><div class="two" style="grid-template-columns:1.25fr 1fr;align-items:start"><div>${sf.map((x,i)=>`<div class="gl sf a"><span class="n">${"abcde"[i]}</span><span>${x}</span></div>`).join("")}</div><div class="col"><div class="gl wc a">${emw()}</div><div class="gl fx a"><em>KECEPATAN DI RUANG HAMPA</em><div>${v("c")} = 3 × 10<sup>8</sup> m/s</div></div></div></div>`,
+`<h1 class="ti2 a">Rumus Penting</h1><div class="fr2" style="gap:18px"><div class="gl fx a"><em>CEPAT RAMBAT GELOMBANG</em><div style="font-size:42px">${v("c")} = λ${v("f")}</div><small>${v("c")} = kecepatan (m/s)<br>λ = panjang gelombang (m)<br>${v("f")} = frekuensi (Hz)</small></div><div class="gl fx a"><em>ENERGI FOTON</em><div style="font-size:42px">${v("E")} = ${v("h")}${v("f")} = ${fr(`${v("h")}${v("c")}`,"λ")}</div><small>${v("E")} = energi (J)<br>${v("h")} = tetapan Planck, 6,63 × 10<sup>−34</sup> J·s</small></div><div class="gl fx a"><em>KECEPATAN DI RUANG HAMPA</em><div style="font-size:38px">${v("c")} = ${fr("1",sq(`${v("μ","0")}${v("ε","0")}`))} ≈ 3 × 10<sup>8</sup> m/s</div><small>${v("μ","0")} = permeabilitas ruang hampa<br>${v("ε","0")} = permitivitas ruang hampa</small></div><div class="gl fx a"><em>HUBUNGAN MEDAN LISTRIK DAN MAGNET</em><div style="font-size:42px">${v("c")} = ${fr(v("E"),v("B"))}</div><small>${v("E")} = kuat medan listrik maksimum (V/m)<br>${v("B")} = induksi magnetik maksimum (T)</small></div></div>`,
+`<h1 class="ti2 a">Spektrum Gelombang Elektromagnetik</h1><div class="axr a"><span>Panjang gelombang besar<br>Frekuensi kecil</span><i></i><span style="text-align:right">Panjang gelombang kecil<br>Frekuensi besar</span></div><div class="sp7">${BD.map(b=>`<div class="gl bn a" style="--a:${b[2]};--b:${b[3]}">${ic(b[0],b[2],b[3])}<b>${b[1]}</b><small>λ<br>${b[4]}</small><small>${v("f")}<br>${b[5]}</small></div>`).join("")}</div><div class="gl vis a"><div class="vl"><b>Cahaya tampak</b><span>diperbesar</span></div><div class="vb"></div><div class="vt"><span>400 nm · ungu</span><span>500 nm</span><span>600 nm</span><span>700 nm · merah</span></div></div>`,
+`<h1 class="ti2 a">Manfaat Gelombang Elektromagnetik</h1><div class="g4">${cards(6)}<div class="gl bd a" style="justify-content:center;align-items:center;text-align:center"><div class="fx" style="padding:0;font-size:36px"><div>${v("E")} = ${v("h")}${v("f")}</div></div><p>Semakin besar frekuensi, semakin besar energi fotonnya.</p></div></div>`,
+`<h1 class="ti2 a">Bahaya Radiasi</h1><div class="g4">${cards(7)}<div class="gl bd a" style="justify-content:center">${ic("shield","#059669","#34d399")}<h4>Proteksi radiasi</h4><p>Persingkat waktu paparan, perbesar jarak dari sumber, dan gunakan perisai pelindung.</p></div></div>`,
+`<h1 class="ti2 a">Contoh Soal</h1><div class="two2"><div class="gl cd a" style="padding:22px 28px"><h3><i>1</i>Panjang gelombang radio FM</h3><p style="text-align:left;font-size:20px">Pemancar radio FM memancarkan gelombang berfrekuensi 100 MHz. Jika ${v("c")} = 3 × 10<sup>8</sup> m/s, tentukan panjang gelombangnya.</p><div class="eq" style="margin-top:14px;font-size:30px"><div>${v("f")} = 100 MHz = 10<sup>8</sup> Hz</div><div>λ = ${fr(v("c"),v("f"))} = ${fr("3 × 10<sup>8</sup>","10<sup>8</sup>")}</div><div>λ = 3 m</div></div></div><div class="gl cd a" style="padding:22px 28px"><h3><i>2</i>Energi foton cahaya hijau</h3><p style="text-align:left;font-size:20px">Cahaya hijau memiliki panjang gelombang 600 nm. Tentukan energi satu foton jika ${v("h")} = 6,6 × 10<sup>−34</sup> J·s.</p><div class="eq" style="margin-top:14px;font-size:30px"><div>λ = 600 nm = 6 × 10<sup>−7</sup> m</div><div>${v("E")} = ${fr(`${v("h")}${v("c")}`,"λ")} = ${fr("(6,6 × 10<sup>−34</sup>)(3 × 10<sup>8</sup>)","6 × 10<sup>−7</sup>")}</div><div>${v("E")} = 3,3 × 10<sup>−19</sup> J</div></div></div></div>`
 ];
+Object.assign(I,{mech:'<path d="M2 12c2.5-6 5-6 7.5 0s5 6 7.5 0 3-4 5-3"/>',bulb:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.9.7 1.5 1.6 1.5 2.6h4c0-1 .6-1.9 1.5-2.6A6 6 0 0 0 12 3z"/>',person:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',list:'<path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/>'});
+const ex=(no,title,soal,dik,dit,steps,jadi,tip)=>`<div class="exh a"><span class="n">${no}</span><h1>${title}</h1></div><div class="two" style="grid-template-columns:.85fr 1.15fr;align-items:start;gap:22px"><div class="col" style="gap:12px"><div class="gl cd a" style="padding:16px 22px"><em class="lb">SOAL</em><p style="font-size:18px;line-height:1.55;text-align:left">${soal}</p></div><div class="gl cd a" style="padding:16px 22px"><em class="lb">DIKETAHUI</em><div class="chp">${dik}</div><em class="lb" style="margin-top:10px">DITANYA</em><div class="chp">${dit}</div></div><div class="gl tip a">${ic("bulb","#f59e0b","#fbbf24")}<span>${tip}</span></div></div><div class="col" style="gap:10px"><em class="lb a" style="margin-left:6px">JAWAB</em>${steps.map((s,i)=>`<div class="gl st2 a"><span class="n">${i+1}</span><div><p>${s[0]}</p><div class="eq">${s[1]}</div></div></div>`).join("")}<div class="gl jd2 a"><b>Jadi,</b> ${jadi}</div></div></div>`;
+const c8="3 × 10<sup>8</sup>";
+const LT=[["Oven microwave",`Oven microwave memakai gelombang berfrekuensi 2,45 GHz. Berapa panjang gelombangnya?`,`${v("f")} = 2,45 × 10<sup>9</sup> Hz<br>λ = ${fr(v("c"),v("f"))} = ${fr(c8,"2,45 × 10<sup>9</sup>")}<br>λ ≈ 0,12 m (12 cm)`],["Sinar-X",`Sinar-X memiliki panjang gelombang 0,1 nm. Tentukan frekuensinya.`,`λ = 10<sup>−10</sup> m<br>${v("f")} = ${fr(v("c"),"λ")} = ${fr(c8,"10<sup>−10</sup>")}<br>${v("f")} = 3 × 10<sup>18</sup> Hz`],["Cahaya Matahari",`Cahaya Matahari sampai ke Bumi dalam 500 sekon. Berapa jarak Bumi ke Matahari?`,`${v("s")} = ${v("c")}${v("t")} = (${c8})(500)<br>${v("s")} = 1,5 × 10<sup>11</sup> m`]];
+const NS={
+map:`<h1 class="ti2 a">Radiasi Gelombang Elektromagnetik</h1><h2 class="a" style="margin:-8px 0 20px 26px">Mempelajari :</h2><div class="three"><div class="gl cd a">${ic("bolt")}<h3>Konsep dan Sifat</h3>${lk(4,"Apa itu gelombang elektromagnetik")}${lk(5,"Terbentuknya gelombang")}${lk(6,"Sifat-sifat gelombang")}</div><div class="gl cd a">${ic("tampak","#8b5cf6","#f59e0b")}<h3>Rumus dan Spektrum</h3>${lk(7,"Rumus penting")}${lk(8,"Awalan satuan dan langkah menghitung")}${lk(9,"Spektrum gelombang")}${lk(12,"Coba sendiri: geser frekuensi")}</div><div class="gl cd a">${ic("calc","#0284c7","#38bdf8")}<h3>Manfaat, Bahaya, dan Latihan</h3>${lk(10,"Manfaat")}${lk(11,"Bahaya radiasi")}${lk(13,"Ringkasan materi")}${lk(14,"Contoh soal")}${lk(18,"Latihan soal")}</div></div>`,
+konsep:`<h1 class="ti2 a">Apa Itu Gelombang Elektromagnetik?</h1><p class="a" style="font-size:21px;margin:-4px 0 16px 26px;line-height:1.55">Gelombang elektromagnetik adalah gelombang yang terdiri atas <b>medan listrik</b> dan <b>medan magnet</b> yang bergetar bersama-sama dan dapat merambat <b>tanpa memerlukan medium</b>.</p><div class="two2"><div class="gl cd a">${ic("mech","#64748b","#94a3b8")}<h3 style="color:var(--ink)">Gelombang Mekanik</h3><ul class="lst2"><li>Membutuhkan medium untuk merambat, misalnya udara, air, atau tali</li><li>Contoh: bunyi, gelombang laut, gelombang tali</li><li>Tidak dapat merambat di ruang hampa</li></ul></div><div class="gl cd a">${ic("bolt")}<h3>Gelombang Elektromagnetik</h3><ul class="lst2"><li>Tidak membutuhkan medium untuk merambat</li><li>Contoh: cahaya, sinyal radio dan Wi-Fi, sinar-X</li><li>Dapat merambat di ruang hampa</li></ul></div></div><div class="gl tip a">${ic("bulb","#f59e0b","#fbbf24")}<span><b>Analogi:</b> di luar angkasa tidak ada udara, sehingga bunyi tidak terdengar. Namun cahaya Matahari tetap sampai ke Bumi karena cahaya adalah gelombang elektromagnetik.</span></div>`,
+bentuk:`<h1 class="ti2 a">Terbentuknya Gelombang Elektromagnetik</h1><div class="stp4">${[["Medan listrik berubah","Muatan listrik bergetar, misalnya arus bolak-balik pada antena, sehingga medan listrik berubah-ubah."],["Timbul medan magnet","Perubahan medan listrik menimbulkan medan magnet di sekitarnya."],["Timbul medan listrik baru","Perubahan medan magnet menimbulkan medan listrik yang baru."],["Merambat sebagai gelombang","Proses ini berulang terus-menerus dan merambat sebagai gelombang elektromagnetik."]].map((x,i)=>`<div class="gl stp a"><span class="n">${i+1}</span><h4>${x[0]}</h4><p>${x[1]}</p></div>`).join("")}</div><div class="two2" style="margin-top:22px"><div class="gl tip a" style="margin:0">${ic("person","#0284c7","#38bdf8")}<span><b>James Clerk Maxwell</b> meramalkan bahwa perubahan medan listrik dan medan magnet dapat merambat sebagai gelombang.</span></div><div class="gl tip a" style="margin:0">${ic("person","#7c3aed","#a78bfa")}<span><b>Heinrich Hertz</b> membuktikan keberadaan gelombang elektromagnetik melalui percobaan.</span></div></div>`,
+satuan:`<h1 class="ti2 a">Awalan Satuan dan Langkah Menghitung</h1><div class="two" style="align-items:stretch;gap:22px"><div class="gl cd a" style="padding:20px 24px"><h3>Awalan satuan yang sering dipakai</h3><div class="pf">${[["n","nano","10<sup>−9</sup>"],["µ","mikro","10<sup>−6</sup>"],["m","mili","10<sup>−3</sup>"],["c","senti","10<sup>−2</sup>"],["k","kilo","10<sup>3</sup>"],["M","mega","10<sup>6</sup>"],["G","giga","10<sup>9</sup>"]].map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span><i>${x[2]}</i></div>`).join("")}</div><p class="pt">Contoh: 1 nm = 10<sup>−9</sup> m, 1 MHz = 10<sup>6</sup> Hz, 1 GHz = 10<sup>9</sup> Hz.</p></div><div class="gl cd a" style="padding:20px 24px"><h3>Langkah mengerjakan soal</h3>${["Tulis yang diketahui dan yang ditanyakan.","Ubah semua satuan ke satuan SI (m, Hz, J).","Pilih rumus yang sesuai.","Masukkan angka, lalu hitung.","Tulis jawaban lengkap dengan satuannya."].map((x,i)=>`<div class="stl"><span class="n">${i+1}</span>${x}</div>`).join("")}<p class="pt">Ingat: ${v("c")} = ${c8} m/s, kecuali soal menyebut lain.</p></div></div>`,
+sim:`<h1 class="ti2 a">Coba Sendiri: Geser Frekuensi</h1><div class="two" style="grid-template-columns:1.3fr 1fr;align-items:stretch;gap:22px"><div class="gl cd a" style="padding:18px 26px"><svg id="simWave" viewBox="0 0 520 90" class="wvs"><path d="M0 45H520" class="ax"/><path fill="none" stroke-width="4" stroke-linecap="round" d=""/></svg><input id="simSl" type="range" min="6" max="20.5" step="0.01" value="8" aria-label="Frekuensi gelombang"><div class="sct"><span>Frekuensi kecil</span><span>Frekuensi besar</span></div><div class="sbr">${BD.map(b=>`<span style="--a:${b[2]}">${b[1].replace("Gelombang ","")}</span>`).join("")}</div><div class="pre">${[["Radio FM",8],["Wi-Fi",9.38],["Cahaya hijau",14.74],["Sinar-X",18.48]].map(x=>`<button type="button" data-lf="${x[1]}">${x[0]}</button>`).join("")}</div></div><div class="col" style="gap:12px"><div class="gl fx a" style="align-items:flex-start"><em>JENIS GELOMBANG</em><div id="simB" class="sbadge">-</div></div><div class="gl fx a"><em>FREKUENSI</em><div style="font-size:30px">${v("f")} = <span id="simF"></span> Hz</div></div><div class="gl fx a"><em>PANJANG GELOMBANG</em><div style="font-size:30px">λ = <span id="simL"></span></div></div><div class="gl fx a"><em>ENERGI FOTON</em><div style="font-size:30px">${v("E")} = <span id="simE"></span> J</div></div></div></div>`,
+ringkas:`<h1 class="ti2 a">Ringkasan Materi</h1><div class="g3">${[["bolt","Gelombang elektromagnetik terdiri atas medan listrik dan medan magnet, dan tidak membutuhkan medium."],["mech","Gelombang bersifat transversal: medan E, medan B, dan arah rambat saling tegak lurus."],["clock","Di ruang hampa, cepat rambat gelombang elektromagnetik adalah c = 3 × 10<sup>8</sup> m/s."],["tampak","Rumus c = λf: makin besar frekuensi, makin kecil panjang gelombangnya."],["uv","Rumus E = hf: makin besar frekuensi, makin besar energi fotonnya."],["list","Urutan spektrum dari frekuensi kecil: radio, mikro, inframerah, cahaya tampak, ultraviolet, sinar-X, gamma."]].map(x=>`<div class="gl bd a">${ic(x[0])}<p style="font-size:17.5px">${x[1]}</p></div>`).join("")}</div>`,
+ex:[
+ex(1,"Contoh Soal 1: Panjang Gelombang Radio FM",`Sebuah pemancar radio FM memancarkan gelombang berfrekuensi 100 MHz. Berapakah panjang gelombangnya?`,`${v("f")} = 100 MHz<br>${v("c")} = ${c8} m/s`,`λ = ... ?`,[[`Ubah satuan frekuensi ke hertz. Ingat 1 MHz = 10<sup>6</sup> Hz.`,`${v("f")} = 100 × 10<sup>6</sup> = 10<sup>8</sup> Hz`],[`Gunakan hubungan cepat rambat gelombang, lalu cari λ.`,`${v("c")} = λ${v("f")} → λ = ${fr(v("c"),v("f"))}`],[`Masukkan angkanya.`,`λ = ${fr(c8,"10<sup>8</sup>")} = 3 m`]],`panjang gelombang radio FM tersebut adalah <b>3 meter</b>.`,`<b>Tips:</b> frekuensi kecil, seperti radio, menghasilkan panjang gelombang yang besar.`),
+ex(2,"Contoh Soal 2: Waktu Rambat Sinyal ke Bulan",`Jarak Bumi ke Bulan sekitar 3,84 × 10<sup>8</sup> m. Berapa lama sinyal radio dari Bumi sampai ke Bulan?`,`${v("s")} = 3,84 × 10<sup>8</sup> m<br>${v("c")} = ${c8} m/s`,`${v("t")} = ... ?`,[[`Sinyal radio adalah gelombang elektromagnetik, jadi kecepatannya sama dengan c.`,`${v("v")} = ${v("c")} = ${c8} m/s`],[`Jarak sama dengan kecepatan dikali waktu. Cari waktunya.`,`${v("s")} = ${v("c")}${v("t")} → ${v("t")} = ${fr(v("s"),v("c"))}`],[`Masukkan angkanya.`,`${v("t")} = ${fr("3,84 × 10<sup>8</sup>",c8)} = 1,28 s`]],`sinyal radio sampai ke Bulan dalam <b>1,28 sekon</b>.`,`<b>Tips:</b> cahaya dan sinyal radio sama-sama merambat dengan kecepatan c.`),
+ex(3,"Contoh Soal 3: Frekuensi Cahaya Tampak",`Sebuah cahaya tampak memiliki panjang gelombang 500 nm. Tentukan frekuensi cahaya tersebut.`,`λ = 500 nm<br>${v("c")} = ${c8} m/s`,`${v("f")} = ... ?`,[[`Ubah nanometer ke meter. Ingat 1 nm = 10<sup>−9</sup> m.`,`λ = 500 × 10<sup>−9</sup> = 5 × 10<sup>−7</sup> m`],[`Dari ${v("c")} = λ${v("f")}, cari frekuensinya.`,`${v("f")} = ${fr(v("c"),"λ")}`],[`Masukkan angkanya.`,`${v("f")} = ${fr(c8,"5 × 10<sup>−7</sup>")} = 6 × 10<sup>14</sup> Hz`]],`frekuensi cahaya tersebut adalah <b>6 × 10<sup>14</sup> Hz</b>.`,`<b>Tips:</b> panjang gelombang kecil menghasilkan frekuensi yang besar.`),
+ex(4,"Contoh Soal 4: Energi Foton Cahaya",`Sebuah cahaya tampak memiliki panjang gelombang 600 nm. Tentukan energi satu fotonnya.`,`λ = 600 nm<br>${v("h")} = 6,6 × 10<sup>−34</sup> J·s<br>${v("c")} = ${c8} m/s`,`${v("E")} = ... ?`,[[`Ubah nanometer ke meter.`,`λ = 600 × 10<sup>−9</sup> = 6 × 10<sup>−7</sup> m`],[`Energi foton ${v("E")} = ${v("h")}${v("f")}. Karena ${v("f")} = ${v("c")}/λ, maka:`,`${v("E")} = ${fr(`${v("h")}${v("c")}`,"λ")}`],[`Masukkan angkanya.`,`${v("E")} = ${fr(`(6,6 × 10<sup>−34</sup>)(${c8})`,"6 × 10<sup>−7</sup>")} = 3,3 × 10<sup>−19</sup> J`]],`energi satu foton cahaya tersebut adalah <b>3,3 × 10<sup>−19</sup> J</b>.`,`<b>Tips:</b> makin besar frekuensi atau makin kecil panjang gelombang, makin besar energi fotonnya.`)],
+lat:`<h1 class="ti2 a">Latihan Soal</h1><p class="a" style="margin:-6px 0 14px 26px;font-size:18px;color:var(--mut);font-weight:600">Kerjakan dulu, lalu ketuk tombol untuk melihat jawabannya.</p><div class="three">${LT.map((x,i)=>`<div class="gl cd lt a"><h3><i>${i+1}</i>${x[0]}</h3><p style="text-align:left">${x[1]}</p><button class="rv" type="button">Lihat jawaban</button><div class="ans eq">${x[2]}</div></div>`).join("")}</div>`};
+const S=[S0[0],S0[1],S0[2],NS.map,NS.konsep,NS.bentuk,S0[4],S0[5],NS.satuan,S0[6],S0[7],S0[8],NS.sim,NS.ringkas,...NS.ex,NS.lat];
 const $=id=>document.getElementById(id),stage=$("stage"),deck=$("deck"),bg=$("bg");
 deck.innerHTML=S.map(h=>`<section class="s"><div class="c"><div class="cc">${h}</div></div></section>`).join("");
 const el=[...deck.children];
@@ -228,21 +340,21 @@ function go(n){n=Math.max(0,Math.min(N-1,n));if(n===cur)return;
 stage.style.setProperty("--d",n>cur?1:-1);
 if(cur>=0){const o=el[cur];o.classList.remove("on");o.classList.add("out");setTimeout(()=>o.classList.remove("out"),560)}
 cur=n;el[n].classList.remove("out");el[n].classList.add("on");
-$("cl").textContent=n<3?"Pendahuluan":"Bab V · Listrik Bolak-Balik";
+$("cl").textContent=n<3?"Fisika Kelas XII":"Radiasi Gelombang Elektromagnetik";
 $("bar").style.width=(n+1)/N*100+"%";$("ct").textContent=(n+1)+" / "+N;
 dots.forEach((d,i)=>d.classList.toggle("on",i===n));
-$("chips").classList.toggle("on",n>=3);syncInst();
-bg.style.setProperty("--o",n/(N-1));bg.style.setProperty("--h",((n%4)-1.5)*9+"deg");
+$("chips").classList.toggle("on",n>=4);syncInst();
+bg.style.setProperty("--o",n/(N-1));bg.style.setProperty("--h",((n%4)-1.5)*3+"deg");
 const sw=$("sw");sw.classList.remove("on");void sw.offsetWidth;sw.classList.add("on");
 kick=1;
 try{history.replaceState(null,"","#"+(n+1))}catch(e){}}
-const menu=$("menu"),tm=o=>{if(o)$("mg").innerHTML=T.map((t,i)=>`<div class="gl mc ${i===cur?"cur":""}" data-g="${i}"><span class="rn">${String(i+1).padStart(2,"0")}</span><b>${t}</b><small>${i<3?"PENDAHULUAN":"BAB V"}</small></div>`).join("");menu.classList.toggle("open",o)};
+const menu=$("menu"),tm=o=>{if(o)$("mg").innerHTML=T.map((t,i)=>`<div class="gl mc ${i===cur?"cur":""}" data-g="${i}"><span class="rn">${String(i+1).padStart(2,"0")}</span><b>${t}</b><small>${i<3?"PENDAHULUAN":"MATERI"}</small></div>`).join("");menu.classList.toggle("open",o)};
 $("pv").onclick=()=>go(cur-1);$("nx").onclick=()=>go(cur+1);$("mn").onclick=()=>tm(true);$("mx").onclick=()=>tm(false);
 const tf=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen().catch(()=>{});
 $("fs").onclick=tf;
 stage.addEventListener("click",e=>{const a=e.target.closest("[data-g]");if(a){tm(false);go(+a.dataset.g)}});
 $("dots").addEventListener("click",e=>{const a=e.target.closest("[data-g]");if(a)go(+a.dataset.g)});
-addEventListener("keydown",e=>{const o=menu.classList.contains("open");
+addEventListener("keydown",e=>{if(e.target&&e.target.tagName==="INPUT"&&e.key.indexOf("Arrow")===0)return;if(e.target&&e.target.tagName==="BUTTON"&&(e.key===" "||e.key==="Enter"))return;const o=menu.classList.contains("open");
 if(e.key==="Escape")return tm(false);
 if(e.key==="m"||e.key==="M")return tm(!o);
 if(e.key==="f"||e.key==="F")return tf();
@@ -251,22 +363,29 @@ if(["ArrowRight","ArrowDown","PageDown"," "].includes(e.key)){e.preventDefault()
 if(["ArrowLeft","ArrowUp","PageUp"].includes(e.key)){e.preventDefault();go(cur-1)}
 if(e.key==="Home")go(0);if(e.key==="End")go(N-1)});
 let x0=null,y0=null,wl=0;
-addEventListener("touchstart",e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+addEventListener("touchstart",e=>{if(e.target.closest&&e.target.closest("input,button,a")){x0=null;return}x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
 addEventListener("touchend",e=>{if(x0===null||menu.classList.contains("open"))return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))go(cur+(dx<0?1:-1));x0=null});
 addEventListener("wheel",e=>{if(menu.classList.contains("open")||Math.abs(e.deltaY)<30||Date.now()-wl<700)return;wl=Date.now();go(cur+(e.deltaY>0?1:-1))},{passive:true});
 let PX=0,PY=0,kick=0;
 addEventListener("pointermove",e=>{PX=e.clientX/innerWidth*2-1;PY=e.clientY/innerHeight*2-1;const r=document.documentElement.style;r.setProperty("--px",PX.toFixed(3));r.setProperty("--py",PY.toFixed(3));bg.style.transform=`translate(${PX*-10}px,${PY*-10}px)`});
-const cv=$("cv"),cx=cv.getContext("2d");let W,H,P=[],ph0=0;
-function rs(){const r=devicePixelRatio||1;W=innerWidth;H=innerHeight;cv.width=W*r;cv.height=H*r;cx.setTransform(r,0,0,r,0,0);P=Array.from({length:Math.min(80,Math.round(W*H/17000))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*2+1}))}
-addEventListener("resize",rs);rs();
-(function tick(){cx.clearRect(0,0,W,H);ph0+=.014;kick*=.96;
-const mx=(PX+1)/2*W,my=(PY+1)/2*H,sp=1+kick*6;
-for(const p of P){p.x+=p.vx*sp;p.y+=p.vy*sp;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;const dx=p.x-mx,dy=p.y-my;if(dx*dx+dy*dy<22000){p.x+=dx*.004;p.y+=dy*.004}}
-for(let i=0;i<P.length;i++){const a=P[i];for(let j=i+1;j<P.length;j++){const b=P[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<150){cx.strokeStyle=`rgba(255,255,255,${(1-d/150)*.7})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
-cx.fillStyle="rgba(255,255,255,.95)";cx.shadowColor="#00c2ff";cx.shadowBlur=8;cx.beginPath();cx.arc(a.x,a.y,a.r,0,7);cx.fill();cx.shadowBlur=0}
-for(let j=0;j<3;j++){cx.beginPath();for(let x=0;x<=W;x+=8){const y=H*(.9+j*.03)+Math.sin(x/W*Math.PI*(2+j)+ph0*(1+j*.35)+j*1.4)*(14+j*5+kick*34);x?cx.lineTo(x,y):cx.moveTo(x,y)}
-if(j===2){cx.lineTo(W,H);cx.lineTo(0,H);cx.fillStyle="rgba(255,255,255,.4)";cx.fill()}else{cx.strokeStyle=`rgba(255,255,255,${.75-j*.2})`;cx.lineWidth=2.2;cx.stroke()}}
-requestAnimationFrame(tick)})();
+
+const CC=3e8,HH=6.63e-34,SB=[[.3,1e9,0],[1e-3,.3,1],[7e-7,1e-3,2],[4e-7,7e-7,3],[1e-8,4e-7,4],[1e-11,1e-8,5],[0,1e-11,6]];
+const sl=$("simSl"),sp=$("simWave").lastElementChild,UN=[[1e3,"km"],[1,"m"],[1e-2,"cm"],[1e-3,"mm"],[1e-6,"µm"],[1e-9,"nm"],[1e-12,"pm"]];
+let sph=0,sc="#2563eb",sn=8;
+const sci=x=>{const e=Math.floor(Math.log10(x));return (x/Math.pow(10,e)).toFixed(2).replace(".",",")+" × 10<sup>"+e+"</sup>"};
+const fm=x=>(x>=100?x.toFixed(0):x>=10?x.toFixed(1):x.toFixed(2)).replace(".",",");
+function sim(){const lf=+sl.value,f=Math.pow(10,lf),l=CC/f,i=SB.find(b=>l>=b[0]&&l<b[1])[2];
+const u=UN.find(a=>l>=a[0])||UN[6];
+sc=i===3?`hsl(${Math.round(270*(1-(l-4e-7)/3e-7))} 85% 50%)`:BD[i][2];sn=2+(lf-6)/14.5*13;
+$("simF").innerHTML=sci(f);$("simL").textContent=fm(l/u[0])+" "+u[1];$("simE").innerHTML=sci(HH*f);
+const b=$("simB");b.textContent=BD[i][1];b.style.background=`linear-gradient(135deg,${sc},${i===3?sc:BD[i][3]})`;
+document.querySelectorAll(".sbr span").forEach((e,k)=>e.classList.toggle("on",k===i));
+sl.style.setProperty("--tc",sc)}
+function dw(){let d="";for(let x=0;x<=520;x+=4)d+=(x?"L":"M")+x+" "+(45-32*Math.sin(x/520*sn*2*Math.PI-sph)).toFixed(1);sp.setAttribute("d",d);sp.setAttribute("stroke",sc)}
+sl.addEventListener("input",sim);
+document.querySelectorAll(".pre button").forEach(b=>b.addEventListener("click",()=>{sl.value=b.dataset.lf;sim()}));
+deck.addEventListener("click",e=>{const b=e.target.closest(".rv");if(!b)return;const c=b.closest(".lt");c.classList.toggle("open");b.textContent=c.classList.contains("open")?"Sembunyikan jawaban":"Lihat jawaban"});
+sim();(function an(){if(cur===12){sph+=.07;dw()}requestAnimationFrame(an)})();
 fitAll();
 document.fonts&&document.fonts.ready.then(()=>{const c=cur;fitAll()});
 go(Math.max(0,Math.min(N-1,(parseInt(location.hash.slice(1))||1)-1)));
@@ -275,12 +394,12 @@ let dp=null,nt;
 function syncInst(){$("inst").classList.toggle("on",cur===0&&!isApp())}
 function note(t){const n=$("note");n.textContent=t;n.classList.add("on");clearTimeout(nt);nt=setTimeout(()=>n.classList.remove("on"),6500)}
 addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e});
-addEventListener("appinstalled",()=>{dp=null;note("Aplikasi Fisika BAB5 berhasil dipasang. Buka dari layar utama atau menu aplikasi.");syncInst()});
+addEventListener("appinstalled",()=>{dp=null;note("Aplikasi Fisika BAB6 berhasil dipasang. Buka dari layar utama atau menu aplikasi.");syncInst()});
 $("inst").onclick=async()=>{
-if(dp){dp.prompt();const c=await dp.userChoice;dp=null;if(c.outcome==="accepted")note("Memasang Fisika BAB5…");return}
+if(dp){dp.prompt();const c=await dp.userChoice;dp=null;if(c.outcome==="accepted")note("Memasang Fisika BAB6…");return}
 if(/iphone|ipad|ipod/i.test(navigator.userAgent))return note("Di iPhone/iPad: ketuk tombol Bagikan, lalu pilih Tambah ke Layar Utama.");
 if(location.protocol==="file:")return note("Pemasangan butuh alamat https (misalnya GitHub Pages). Unggah folder ini dulu, lalu buka alamatnya.");
-note("Klik ikon pasang di kolom alamat browser, atau menu browser lalu Instal Fisika BAB5 / Tambahkan ke layar utama.")};
+note("Klik ikon pasang di kolom alamat browser, atau menu browser lalu Instal Fisika BAB6 / Tambahkan ke layar utama.")};
 addEventListener("pointerdown",()=>{if(isApp()&&!document.fullscreenElement&&document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{})},{once:true});
 matchMedia("(display-mode: fullscreen)").addEventListener&&matchMedia("(display-mode: fullscreen)").addEventListener("change",syncInst);
 syncInst();
